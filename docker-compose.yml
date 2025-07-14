@@ -1,0 +1,48 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:16
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: StudyHope
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: gleb11223300pylit
+
+  studyhope:
+    build: ./StudyHope
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./StudyHope:/code
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+  my-react-app:
+    build: ./my-react-app
+    command: npm start
+    volumes:
+      - ./my-react-app:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - studyhope
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: gleb-01.ru@mail.ru
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    restart: always
+
+volumes:
+  postgres_data:

@@ -1,0 +1,14 @@
+.test-results {
+    padding: 2em;
+    border-radius: 10px;
+    margin: 2em 0;
+}
+
+.test-results h2 {
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+
+.test-results p {
+    font-size: 1.5em;
+}

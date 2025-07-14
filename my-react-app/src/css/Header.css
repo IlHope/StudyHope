@@ -1,0 +1,37 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px; /* Отступы вокруг текста */
+    font-family: 'Arial', sans-serif; /* Шрифт Arial или любой санс-серифный при его отсутствии */
+    border-bottom: 3px solid DarkBlue; /* Темно-синяя тенистая линия на нижнем крае */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Слабая тень для выделения заголовка */
+}
+
+.header-text {
+    font-size: 2rem; /* Размер шрифта */
+    font-weight: 600; /* Полужирный шрифт */
+    color: DarkBlue; /* inherit - наследует свойство от родителя */
+    text-decoration: none; /* Добавляет оформление текста в виде его подчеркивания, перечеркивания, линии над текстом и мигания. */
+}
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.link {
+    margin-left: 2em;
+    margin-right: 2em;
+    text-decoration: none;
+    color: DarkBlue;
+}
+
+.link:last-child {
+    margin-right: 0;
+}

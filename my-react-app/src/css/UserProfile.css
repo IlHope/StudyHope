@@ -1,0 +1,148 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.profile-container h1 {
+    color: DarkBlue;
+    text-align: left;
+    letter-spacing: 1px;
+    margin-bottom: 2em;
+    padding: 15px 150px;
+    background: linear-gradient(120deg, #f6d365 25%, #fda085 100%);
+}
+
+.profile-sections {
+    display: grid;
+    grid-template-columns: auto 1fr; /* разделение экрана на 2 колонки: для h2 и для контента */
+    max-width: 100%;
+    overflow-x: auto; /* Добавляет горизонтальный скролл при необходимости */
+}
+
+.profile-sections-name h2 {
+    grid-column: 1;
+    color: DarkBlue;
+    text-align: left;
+    margin: 1em 0 -1em 150px;
+    padding: 1em 0;
+    border-right: 2px solid DarkBlue;
+    width: 10em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-sections-name h2:hover {
+    background-color: #f6d365;
+}
+
+.profile-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 45em;
+}
+
+.profile-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin: 2em 5em;
+}
+
+.profile-form-container div {
+    display: flex;
+    align-items: center;
+}
+
+.profile-form-container label {
+    color: DarkBlue;
+    font-weight: bold;
+    min-width: 100px;
+    text-align: left;
+}
+
+.profile-form-container input {
+    width: 20em;
+    padding: 0.5em;
+    border: 1px solid DarkBlue;
+    border-radius: 5px;
+    margin-left: 1em;
+}
+
+
+
+.profile-form-container button {
+    width: 15em;
+    padding: 1em;
+    background-color: DarkBlue;
+    color: White;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-container form button:hover {
+    background-color: White;
+    color: DarkBlue;
+    border: 2px solid DarkBlue;
+}
+
+
+
+.profile-course-list, .profile-results-list {
+    margin: 2em;
+    max-width: 40em;
+}
+
+.profile-course-list div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.5em;
+    border-bottom: 2px solid DarkBlue;
+    margin-bottom: 2em;
+    transition: transform 0.3s ease;
+}
+
+.profile-results-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1em;
+    border-bottom: 2px solid DarkBlue;
+    margin-bottom: 1em;
+    transition: transform 0.3s ease;
+}
+
+.profile-course-list div:hover,
+.profile-results-list li:hover {
+    transform: scale(1.05);
+}
+
+.profile-course-list div a {
+    color: DarkBlue;
+    text-decoration: none;
+}
+
+.profile-results-list li p {
+    margin: 0.3em;
+    color: DarkBlue;
+}
+
+.profile-course-list div button {
+    background-color: DarkBlue;
+    color: White;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-course-list div button:hover {
+    background-color: White;
+    color: DarkBlue;
+    border: 1px solid DarkBlue;
+}

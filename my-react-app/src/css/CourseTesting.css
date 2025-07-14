@@ -1,0 +1,86 @@
+.test-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: DarkBlue;
+    background-color: #f0f4f8; /* Светлый фон для контраста */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 3em 150px;
+    font-family: Arial, sans-serif;
+}
+
+.test-page h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid DarkBlue;
+    padding-bottom: 0.5em;
+}
+
+.question-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: White;
+    border-left: 5px solid DarkBlue;
+    margin-bottom: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    color: Black;
+}
+
+.question-content h3 {
+    letter-spacing: 1px;
+    margin-bottom: 1.5em;
+}
+
+.question-content label {
+    display: flex;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+
+.question-content input[type="radio"] {
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+.question-content textarea {
+    width: 60%;
+    padding: 0.5em;
+    border: 1px solid DarkBlue;
+    border-radius: 5px;
+    font-size: 1.3em;
+    color: Black;
+    resize: none;
+}
+
+.options-container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Два столбца: автоширина для радио-кнопок и 1fr для текста */
+    gap: 0.5em 1em; /* Отступы между элементами сетки */
+}
+
+.submit-button {
+    color: White;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 1em;
+    width: auto;
+    text-align: center;
+    background-color: rgba(70, 80, 130, 1); /* Светло-синий цвет для кнопки */
+}
+
+.submit-button:hover {
+    background-color: White; /* Темно-синий цвет для кнопки при наведении */
+    color: DarkBlue;
+    border: 1px solid DarkBlue;
+    transform: scale(1.1);
+}

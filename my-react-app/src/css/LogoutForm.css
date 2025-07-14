@@ -1,0 +1,21 @@
+.profile-section-content p {
+    align-self: end;
+    margin-top: -2em;
+    margin-right: 15em;
+}
+
+.logout-form {
+    background-color: #ff2b2b;
+    color: White;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-form:hover {
+  background-color: White;
+  color: #ff2b2b;
+  border: 2px solid #ff2b2b;
+}
