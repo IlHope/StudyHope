@@ -20,15 +20,15 @@
  - Database: PostgreSQL
   
 API:
- /admin/				-> Административная панель
- /api/chapters/			-> Главы курсов
- /api/content/			-> Контент глав
- /api/courses/			-> Курсы
- /api/users/			-> Пользователи
- /api/options/			-> Варианты ответов
- /api/questions/		-> Вопросы
- /api/results/			-> Результаты тестов
- /api/testings/			-> Тесты
- /api/auth/				-> Авторизация
- /api/token/			-> Получение токена авторизации
- /api/token/refresh/	-> Обновление токена авторизации
+- /admin/		-> Административная панель
+- /api/chapters/	-> Главы курсов
+- /api/content/		-> Контент глав
+- /api/courses/		-> Курсы
+- /api/users/		-> Пользователи
+- /api/options/		-> Варианты ответов
+- /api/questions/	-> Вопросы
+- /api/results/		-> Результаты тестов
+- /api/testings/	-> Тесты
+- /api/auth/		-> Авторизация
+- /api/token/		-> Получение токена авторизации
+- /api/token/refresh/	-> Обновление токена авторизации
